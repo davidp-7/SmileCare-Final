@@ -21,7 +21,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret-change-me';
 const PORT = process.env.PORT || 4000;
 
 // --- SQLite setup ---
-const db = new sqlite3.Database('./smilecare.db');
+const db = new sqlite3.Database(process.env.DB_PATH || './smilecare.db');
 
 db.serialize(() => {
   db.run(`CREATE TABLE IF NOT EXISTS users (
