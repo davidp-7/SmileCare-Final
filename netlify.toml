@@ -1,0 +1,11 @@
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  VITE_API_URL = "https://smilecare-final.onrender.com"
+
+# Avoid post-processing hangs
+[build.processing]
+  skip_processing = true
