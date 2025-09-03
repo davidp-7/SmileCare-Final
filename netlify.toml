@@ -5,7 +5,7 @@
 
 [build.environment]
   VITE_API_URL = "https://smilecare-final.onrender.com"
-
+  NODE_VERSION = "20"
 # Avoid post-processing hangs
 [build.processing]
   skip_processing = true
